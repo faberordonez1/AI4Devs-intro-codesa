@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4 text-lg">
+    <div class="w-full max-w-md bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+        <h1 class="text-3xl font-bold mb-6">Reverse String</h1>
+        <input type="text" id="textInput" placeholder="Enter text" class="w-full p-3 rounded border border-gray-700 bg-gray-700 text-white text-xl">
+        <p id="result" class="mt-4 text-2xl font-semibold text-white"></p>
+        <div class="flex justify-center gap-4 mt-6">
+            <button id="reverseBtn" class="bg-blue-500 text-white p-3 rounded flex items-center gap-2 text-xl">
+                🔄 Reverse
+            </button>
+            <button id="copyBtn" class="bg-green-500 text-white p-3 rounded flex items-center gap-2 text-xl">
+                📋 Copy
+            </button>
+        </div>
+    </div>
+    <div class="fixed top-4 right-4 flex items-center gap-2">
+        <label for="themeToggle" id="themeLabel" class="text-xl font-bold">🌙 Dark Mode</label>
+        <div class="relative w-16 h-8 bg-white dark:bg-gray-800 rounded-full flex items-center p-1 transition-all">
+            <div id="toggleCircle" class="w-6 h-6 bg-gray-900 dark:bg-white rounded-full flex items-center justify-center text-xl transition-all">🌙</div>
+        </div>
+        <input type="checkbox" id="themeToggle" class="hidden">
+    </div>
+</body>
+</html>
